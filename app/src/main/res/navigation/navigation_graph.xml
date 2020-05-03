@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/firstDestination">
+
+    <fragment
+        android:id="@+id/firstDestination"
+        android:name="com.example.demonavigationgraph.FirstDestination"
+        android:label="fragment_first_destination"
+        tools:layout="@layout/fragment_first_destination" >
+        <action
+            android:id="@+id/action_firstDestination_to_secondDestination"
+            app:destination="@id/secondDestination" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondDestination"
+        android:name="com.example.demonavigationgraph.SecondDestination"
+        android:label="fragment_second_destination"
+        tools:layout="@layout/fragment_second_destination" />
+</navigation>
