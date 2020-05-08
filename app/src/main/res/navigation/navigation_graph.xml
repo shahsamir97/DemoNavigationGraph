@@ -18,5 +18,22 @@
         android:id="@+id/secondDestination"
         android:name="com.example.demonavigationgraph.SecondDestination"
         android:label="fragment_second_destination"
-        tools:layout="@layout/fragment_second_destination" />
+        tools:layout="@layout/fragment_second_destination" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutPage"
+        android:name="com.example.demonavigationgraph.AboutPage"
+        android:label="fragment_about_page"
+        tools:layout="@layout/fragment_about_page" />
+    <fragment
+        android:id="@+id/rules"
+        android:name="com.example.demonavigationgraph.Rules"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
 </navigation>
